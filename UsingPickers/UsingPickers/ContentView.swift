@@ -37,7 +37,7 @@ struct ContentView: View {
             
             Section {
                 Slider(value: $sliderVal, in: 0...10, step: 0.001)
-                Text("Slider current value \(sliderVal, specifier: "%.3f")")
+                Text("Slider current value \(sliderVal, specifier: "%.2f")")
             }
         }
     }
