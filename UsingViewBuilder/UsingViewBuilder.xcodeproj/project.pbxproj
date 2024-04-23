@@ -11,6 +11,7 @@
 		37E927D82BD798FA0054ECDA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E927D72BD798FA0054ECDA /* ContentView.swift */; };
 		37E927DA2BD798FB0054ECDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37E927D92BD798FB0054ECDA /* Assets.xcassets */; };
 		37E927DD2BD798FB0054ECDA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37E927DC2BD798FB0054ECDA /* Preview Assets.xcassets */; };
+		37E927E62BD7993E0054ECDA /* BlueCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E927E52BD7993E0054ECDA /* BlueCircle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		37E927D72BD798FA0054ECDA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		37E927D92BD798FB0054ECDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37E927DC2BD798FB0054ECDA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		37E927E52BD7993E0054ECDA /* BlueCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueCircle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				37E927D52BD798FA0054ECDA /* UsingViewBuilderApp.swift */,
 				37E927D72BD798FA0054ECDA /* ContentView.swift */,
+				37E927E52BD7993E0054ECDA /* BlueCircle.swift */,
 				37E927D92BD798FB0054ECDA /* Assets.xcassets */,
 				37E927DB2BD798FB0054ECDA /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37E927E62BD7993E0054ECDA /* BlueCircle.swift in Sources */,
 				37E927D82BD798FA0054ECDA /* ContentView.swift in Sources */,
 				37E927D62BD798FA0054ECDA /* UsingViewBuilderApp.swift in Sources */,
 			);
