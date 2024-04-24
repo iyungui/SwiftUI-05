@@ -11,6 +11,8 @@
 		379861F82BD8979500920F4B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379861F72BD8979500920F4B /* ContentView.swift */; };
 		379861FA2BD8979700920F4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 379861F92BD8979700920F4B /* Assets.xcassets */; };
 		379861FD2BD8979700920F4B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 379861FC2BD8979700920F4B /* Preview Assets.xcassets */; };
+		379862042BD89A9B00920F4B /* WeatherRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379862032BD89A9B00920F4B /* WeatherRow.swift */; };
+		379862062BD89B1D00920F4B /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379862052BD89B1D00920F4B /* WeatherInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		379861F72BD8979500920F4B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		379861F92BD8979700920F4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		379861FC2BD8979700920F4B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		379862032BD89A9B00920F4B /* WeatherRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRow.swift; sourceTree = "<group>"; };
+		379862052BD89B1D00920F4B /* WeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +57,10 @@
 			children = (
 				379861F52BD8979500920F4B /* StaticListApp.swift */,
 				379861F72BD8979500920F4B /* ContentView.swift */,
+				379862032BD89A9B00920F4B /* WeatherRow.swift */,
 				379861F92BD8979700920F4B /* Assets.xcassets */,
 				379861FB2BD8979700920F4B /* Preview Content */,
+				379862052BD89B1D00920F4B /* WeatherInfo.swift */,
 			);
 			path = StaticList;
 			sourceTree = "<group>";
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				379862062BD89B1D00920F4B /* WeatherInfo.swift in Sources */,
+				379862042BD89A9B00920F4B /* WeatherRow.swift in Sources */,
 				379861F82BD8979500920F4B /* ContentView.swift in Sources */,
 				379861F62BD8979500920F4B /* StaticListApp.swift in Sources */,
 			);
