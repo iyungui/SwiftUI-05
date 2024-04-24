@@ -16,6 +16,9 @@ struct ContentView: View {
                 ForEach(numbers, id: \.self) { number in
                     Text("\(number)")
                 }
+                .onDelete(perform: { indexSet in
+                    numbers.remove(atOffsets: indexSet)
+                })
             }
             .navigationTitle("Number List")
             .navigationBarTitleDisplayMode(.inline)
