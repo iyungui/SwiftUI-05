@@ -59,8 +59,8 @@
 				379861F72BD8979500920F4B /* ContentView.swift */,
 				379862032BD89A9B00920F4B /* WeatherRow.swift */,
 				379861F92BD8979700920F4B /* Assets.xcassets */,
-				379861FB2BD8979700920F4B /* Preview Content */,
 				379862052BD89B1D00920F4B /* WeatherInfo.swift */,
+				379861FB2BD8979700920F4B /* Preview Content */,
 			);
 			path = StaticList;
 			sourceTree = "<group>";
