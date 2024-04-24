@@ -36,8 +36,8 @@ struct ContentView: View {
         }
     }
     
-    private func moveRow(source: IndexSet, detination: Int) {
-        numbers.move(fromOffsets: source, toOffset: detination)
+    private func moveRow(source: IndexSet, destination: Int) {
+        numbers.move(fromOffsets: source, toOffset: destination)
     }
     
     private func addItemToRow() {
