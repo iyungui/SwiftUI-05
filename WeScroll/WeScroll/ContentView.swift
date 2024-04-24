@@ -26,6 +26,7 @@ struct ContentView: View {
                 }
             }
             .frame(width: 50, height: 200)
+            .scrollBounceBehavior(.basedOnSize, axes: .vertical)
             ScrollView(.horizontal) {
                 HStack {
                     ForEach(letters, id: \.self) { letter in
@@ -44,7 +45,7 @@ struct ContentView: View {
                 flashIndicators.toggle()
             }
         }
-        .scrollIndicators(.hidden, axes: .vertical)
+        .scrollIndicators(.hidden, axes: [.vertical, .horizontal])
     }
 }
 
