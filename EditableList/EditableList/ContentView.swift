@@ -21,8 +21,8 @@ struct ContentView: View {
     ]
     
     var body: some View {
-        List($todos) { $todo in
-            TextField("Todo Item", text: $todo.title)
+        List($todos) { todo in
+            TextField("Todo Item", text: todo.title)
         }
         
 //        List(0..<todos.count) { index in
