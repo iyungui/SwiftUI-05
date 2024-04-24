@@ -22,7 +22,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <segue destination="4Pq-hD-h62" kind="show" destinationCreationSelector="goto:" id="OK0-ZX-ZBP"/>
+                                    <segue destination="4Pq-hD-h62" kind="show" id="lRE-Dp-AYk"/>
                                 </connections>
                             </button>
                         </subviews>
