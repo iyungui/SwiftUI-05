@@ -13,6 +13,7 @@
 		37E9284D2BD8843A0054ECDA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 37E9284C2BD8843A0054ECDA /* Base */; };
 		37E9284F2BD8843B0054ECDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37E9284E2BD8843B0054ECDA /* Assets.xcassets */; };
 		37E928522BD8843B0054ECDA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 37E928512BD8843B0054ECDA /* Base */; };
+		37E9285A2BD888F30054ECDA /* Greetings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E928592BD888F30054ECDA /* Greetings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		37E9284E2BD8843B0054ECDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37E928512BD8843B0054ECDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37E928532BD8843B0054ECDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37E928592BD888F30054ECDA /* Greetings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Greetings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				37E928452BD8843A0054ECDA /* AppDelegate.swift */,
 				37E928472BD8843A0054ECDA /* SceneDelegate.swift */,
 				37E928492BD8843A0054ECDA /* ViewController.swift */,
+				37E928592BD888F30054ECDA /* Greetings.swift */,
 				37E9284B2BD8843A0054ECDA /* Main.storyboard */,
 				37E9284E2BD8843B0054ECDA /* Assets.xcassets */,
 				37E928502BD8843B0054ECDA /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				37E9284A2BD8843A0054ECDA /* ViewController.swift in Sources */,
 				37E928462BD8843A0054ECDA /* AppDelegate.swift in Sources */,
+				37E9285A2BD888F30054ECDA /* Greetings.swift in Sources */,
 				37E928482BD8843A0054ECDA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
