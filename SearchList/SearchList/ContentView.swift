@@ -8,14 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+    @State var searchText = ""
+    let food: [Food] = Food.sampleFood
+    
+    var searchResults: [Food] {
+        if searchText.isEmpty {
+            return food
+        } else {
+            return food.filter { $0.name.lowercased().contains(searchText.lowercased()) }
         }
-        .padding()
+    }
+    
+    var body: some View {
+        NavigationStack {
+            List {
+                ForEach(searchResults, id: \.self) { food in
+                    LabeledContent(food.name) {
+                        Text("\(food.category.rawValue)")
+                    }
+                }
+            }
+            .searchable(text: $searchText, prompt: "Search for a food")
+            .navigationTitle("Foods")
+        }
     }
 }
 
