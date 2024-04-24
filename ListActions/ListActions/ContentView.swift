@@ -8,14 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var numbers = [1,2,3,4]
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            List {
+                ForEach(numbers, id: \.self) { number in
+                    Text("\(number)")
+                }
+            }
+            .navigationTitle("Number List")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                Button("Add") {
+                    addItemToRow()
+                }
+            }
         }
-        .padding()
+    }
+    
+    private func addItemToRow() {
+        numbers.append(Int.random(in: 5..<100))
     }
 }
 
