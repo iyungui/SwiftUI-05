@@ -19,6 +19,9 @@ struct ListRow: View {
     
     var body: some View {
         Text("\(type) \(id)").padding()
+            .onDisappear {
+                print("disappear: \(id)")
+            }
     }
 }
 
