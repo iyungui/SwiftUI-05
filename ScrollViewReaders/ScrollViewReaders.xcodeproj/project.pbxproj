@@ -11,6 +11,7 @@
 		C60935342BD9E59E0034D44D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60935332BD9E59E0034D44D /* ContentView.swift */; };
 		C60935362BD9E5A00034D44D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C60935352BD9E5A00034D44D /* Assets.xcassets */; };
 		C60935392BD9E5A00034D44D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C60935382BD9E5A00034D44D /* Preview Assets.xcassets */; };
+		C60935402BD9E73A0034D44D /* CharacterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C609353F2BD9E73A0034D44D /* CharacterInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		C60935332BD9E59E0034D44D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C60935352BD9E5A00034D44D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C60935382BD9E5A00034D44D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C609353F2BD9E73A0034D44D /* CharacterInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				C60935312BD9E59E0034D44D /* ScrollViewReadersApp.swift */,
 				C60935332BD9E59E0034D44D /* ContentView.swift */,
+				C609353F2BD9E73A0034D44D /* CharacterInfo.swift */,
 				C60935352BD9E5A00034D44D /* Assets.xcassets */,
 				C60935372BD9E5A00034D44D /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C60935402BD9E73A0034D44D /* CharacterInfo.swift in Sources */,
 				C60935342BD9E59E0034D44D /* ContentView.swift in Sources */,
 				C60935322BD9E59E0034D44D /* ScrollViewReadersApp.swift in Sources */,
 			);
