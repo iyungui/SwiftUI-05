@@ -43,7 +43,7 @@ struct ContentView: View {
                     .background(.blue)
                     .tint(.yellow)
                 }
-                .scrollPosition(id: $scrolledID)
+                .scrollPosition(id: $scrolledID, anchor: .top)
             }
             // MARK: - iOS 14+
             VStack {
