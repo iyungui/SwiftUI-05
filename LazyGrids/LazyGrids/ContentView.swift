@@ -31,7 +31,7 @@ struct ContentView: View {
                     }
                 }
             }
-            ScrollView {
+            ScrollView(.horizontal) {
                 LazyHGrid(rows: rowSpec, spacing: 20) {
                     ForEach(1...999, id: \.self) { index in
                         Text("Item \(index)")
