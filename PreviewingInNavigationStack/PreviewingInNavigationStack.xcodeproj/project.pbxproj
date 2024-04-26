@@ -11,6 +11,7 @@
 		C6B0912F2BDB467C00DEEF63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B0912E2BDB467C00DEEF63 /* ContentView.swift */; };
 		C6B091312BDB467F00DEEF63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6B091302BDB467F00DEEF63 /* Assets.xcassets */; };
 		C6B091342BDB467F00DEEF63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6B091332BDB467F00DEEF63 /* Preview Assets.xcassets */; };
+		C6B0913B2BDB471600DEEF63 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B0913A2BDB471600DEEF63 /* SecondView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		C6B0912E2BDB467C00DEEF63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C6B091302BDB467F00DEEF63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6B091332BDB467F00DEEF63 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C6B0913A2BDB471600DEEF63 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				C6B0912C2BDB467C00DEEF63 /* PreviewingInNavigationStackApp.swift */,
 				C6B0912E2BDB467C00DEEF63 /* ContentView.swift */,
+				C6B0913A2BDB471600DEEF63 /* SecondView.swift */,
 				C6B091302BDB467F00DEEF63 /* Assets.xcassets */,
 				C6B091322BDB467F00DEEF63 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6B0913B2BDB471600DEEF63 /* SecondView.swift in Sources */,
 				C6B0912F2BDB467C00DEEF63 /* ContentView.swift in Sources */,
 				C6B0912D2BDB467C00DEEF63 /* PreviewingInNavigationStackApp.swift in Sources */,
 			);
