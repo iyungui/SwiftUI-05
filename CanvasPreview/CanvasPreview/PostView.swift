@@ -38,6 +38,14 @@ struct PostView: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: geometry.size.height * 0.55)
+                        
+                        VStack(alignment: .leading) {
+                            Text(title)
+                                .font(.title2)
+                                .padding(.top)
+                            Text(text)
+                                .padding(.top)
+                        }
                     }
                     .padding()
                 }
@@ -52,3 +60,4 @@ struct PostView: View {
              imageName: "cloud.bolt.rain"
     )
 }
+
