@@ -16,6 +16,7 @@
 		C6E3DD542BDF6B42003C166B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C6E3DD532BDF6B42003C166B /* GoogleService-Info.plist */; };
 		C6E3DD562BDF6FE4003C166B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C6E3DD552BDF6FE4003C166B /* FirebaseAuth */; };
 		C6E3DD582BDF7427003C166B /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E3DD572BDF7427003C166B /* AuthenticationViewModel.swift */; };
+		C6E3DD5A2BDF81D6003C166B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E3DD592BDF81D6003C166B /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		C6E3DD522BDF5E13003C166B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C6E3DD532BDF6B42003C166B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C6E3DD572BDF7427003C166B /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		C6E3DD592BDF81D6003C166B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				C65840452BDF59960015DCE8 /* FirebaseBasicApp.swift */,
 				C6E3DD532BDF6B42003C166B /* GoogleService-Info.plist */,
 				C65840472BDF59960015DCE8 /* ContentView.swift */,
+				C6E3DD592BDF81D6003C166B /* ProfileView.swift */,
 				C6E3DD572BDF7427003C166B /* AuthenticationViewModel.swift */,
 				C65840492BDF59980015DCE8 /* Assets.xcassets */,
 				C658404B2BDF59980015DCE8 /* Preview Content */,
@@ -161,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6E3DD5A2BDF81D6003C166B /* ProfileView.swift in Sources */,
 				C6E3DD582BDF7427003C166B /* AuthenticationViewModel.swift in Sources */,
 				C65840482BDF59960015DCE8 /* ContentView.swift in Sources */,
 				C65840462BDF59960015DCE8 /* FirebaseBasicApp.swift in Sources */,
