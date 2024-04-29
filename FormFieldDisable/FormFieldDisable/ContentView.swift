@@ -8,12 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var username: String = ""
+    @State private var password: String = ""
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Dungeons and Wagons")
+                .fontWeight(.heavy)
+                .foregroundStyle(.blue)
+                .font(.largeTitle)
+                .padding(.bottom, 30)
+                
+            Image(systemName: "person.circle")
+                .font(.system(size: 150))
+                .foregroundStyle(.gray)
+                .padding(.bottom, 40)
+            
+            Group {
+                TextField("Username", text: $username)
+                
+                Group {
+                    TextField("Username", text: $username)
+                    SecureField("Password", text: $password)
+                }
+                .padding()
+                .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.black, lineWidth: 2))
+            }
         }
         .padding()
     }
