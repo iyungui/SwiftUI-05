@@ -15,10 +15,15 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             Color.white
+            
             if userName.isEmpty {
                 SignInWithAppleButton(
                     .signIn, onRequest: onRequest, onCompletion: onCompletion
                 )
+                .signInWithAppleButtonStyle(.black)
+                .frame(maxWidth: .infinity, maxHeight: 50)
+                .padding(.horizontal)
+                
             } else {
                 Text("Welcome\n\(userName), \(userEmail)")
                     .font(.headline)
