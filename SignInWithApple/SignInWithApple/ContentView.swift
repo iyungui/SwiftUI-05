@@ -12,6 +12,20 @@ struct ContentView: View {
     @State private var userName: String = ""
     @State private var userEmail: String = ""
     
+    @AppStorage("storedName") private var storedName: String = "" {
+        didSet {
+            userName = storedName
+        }
+    }
+    
+    @AppStorage("storedEmail") private var storedEmail: String = "" {
+        didSet {
+            userEmail = storedEmail
+        }
+    }
+    
+    @AppStorage("userID") private var userID: String = ""
+    
     var body: some View {
         ZStack {
             Color.white
@@ -29,6 +43,31 @@ struct ContentView: View {
                     .font(.headline)
             }
         }
+        .task {
+            await authorize()
+        }
+    }
+    
+    private func authorize() async {
+        guard !userID.isEmpty else {
+            userName = ""
+            userEmail = ""
+            return
+        }
+        guard let credentialState = try? await ASAuthorizationAppleIDProvider()
+            .credentialState(forUserID: userID) else {
+            userName = ""
+            userEmail = ""
+            return
+        }
+        switch credentialState {
+        case .authorized:
+            userName = storedName
+            userEmail = storedEmail
+        default:
+            userName = ""
+            userEmail = ""
+        }
     }
     
     private func onRequest(_ request: ASAuthorizationAppleIDRequest) {
@@ -40,8 +79,10 @@ struct ContentView: View {
         case .success(let authResult):
             guard let credential = authResult.credential as? ASAuthorizationAppleIDCredential
             else { return }
-                // MARK: - Store Data
-            
+            // MARK: - Store Data
+            storedName = credential.fullName?.givenName ?? ""
+            storedEmail = credential.email ?? ""
+            userID = credential.user
         case .failure(let error):
             print("Authorization failed: " + error.localizedDescription)
         }
