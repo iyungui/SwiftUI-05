@@ -13,6 +13,7 @@ class RemoteConfiguration {
     private var remoteConfig = Firebase.RemoteConfig.remoteConfig()
 
     init() {
+        // Enable developer mode
         let settings = RemoteConfigSettings()
         settings.minimumFetchInterval = 0
         remoteConfig.configSettings = settings
@@ -38,7 +39,15 @@ class RemoteConfiguration {
     }
     
     func registerForRealtimeUpdate() {
-        
+        print("Registering for Remote Config realtime updates")
+        remoteConfig.addOnConfigUpdateListener { [self] update, error in
+            guard let update, error == nil else {
+                print("Error listening for Remote Config realtime update")
+                return
+            }
+            print("Updated keys in realtime: \(update.updatedKeys)")
+            activate()
+        }
     }
 }
 
@@ -68,6 +77,10 @@ struct ContentView: View {
             }
         }
         .padding()
+        .task {
+            await config.fetchFromServer()
+            config.registerForRealtimeUpdate()
+        }
     }
 }
 
